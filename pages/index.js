@@ -4,8 +4,7 @@ import Nav from "../components/nav";
 import Results from "../components/results";
 import requests from "../utils/requests";
 
-export default function Home(props) {
-  console.log(props);
+export default function Home({ results }) {
   return (
     <div>
       <Head>

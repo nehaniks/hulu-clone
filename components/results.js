@@ -1,7 +1,11 @@
-export default function Results({ requests }) {
+import Thumbnail from "./thumbnail";
+
+export default function Results({ results }) {
   return (
     <div>
-      <h1>Results</h1>
+      {results.map((result) => (
+        <Thumbnail key={result.id} result={result} />
+      ))}
     </div>
   );
 }
